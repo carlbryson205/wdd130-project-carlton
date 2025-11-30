@@ -1,30 +1,92 @@
 <!-- Josue Garcia -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Forge | Daily Discipline</title>
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
-
 <body>
-    <header>
-        <h1>Daily Motivation</h1>
-        <p>Your dose of inspiration to conquer the day</p>
+  <div class="page-wrapper">
+
+    <header class="site-header">
+      <div class="logo-area">
+        <a href="index.html" class="logo-link">
+          <img src="images/theforge.png" alt="The Forge logo" class="site-logo" />
+        </a>
+        <span class="site-name">THE FORGE</span>
+      </div>
+
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="page2.html" class="nav-link">Page 2</a>
+        <a href="page3.html" class="nav-link">Page 3</a>
+      </nav>
     </header>
 
-    <section class="quote-box">
-        <blockquote>
-            "The only thing we're allowed to do is to believe. We can't change anything."
-        </blockquote>
-        <cite>- Guts</cite>
-    </section>
+    <main>
+      <section class="hero-section">
 
-    <img src="images/berserk-guts.png" alt="berserk-guts">
+        <div class="hero-text">
+          <h1 class="hero-title">The Forge</h1>
+          <p class="hero-subtitle">Daily training for discipline and clarity.</p>
 
-    <button id="new-quote">New Quote</button>
+          <p class="hero-overview">
+            The Forge is a daily site built for men who value discipline,
+            resilience, and clear thinking. Its purpose is to provide one
+            powerful quote or idea each day, along with a short reflection, to
+            help men develop a stronger mindset and make better decisions in
+            their everyday lives.
+          </p>
+
+          <p class="hero-overview">
+            The content is direct and honest, focused on self-responsibility
+            instead of empty motivation. Each visit is meant to feel like a
+            small mental workout: simple, challenging, and practical. The goal
+            is not to entertain, but to give men a place where they can return
+            daily to sharpen their thoughts and character over time.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Sign Up</a>
+            <a href="#" class="btn btn-secondary">View All</a>
+          </div>
+        </div>
+
+        <div class="hero-image-area">
+
+          <div class="hero-quote-box">
+            <p class="hero-quote-author">Alex Hormozi</p>
+            <p class="hero-quote">
+              “The single greatest skill you can develop is the ability to stay in a great mood 
+              in the absence of things to be in a great mood about.”
+            </p>
+          </div>
+
+          <div class="hero-image-bg-wrapper">
+            <img
+              src="images/berserk-guts.png"
+              alt="background behind portrait"
+              class="hero-image-bg"
+            />
+          </div>
+
+          <div class="hero-person-wrapper">
+            <img
+              src="images/alexhormozi.jpg"
+              alt="portrait of alex hormozi"
+              class="hero-person-image"
+            />
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 The Forge. Daily discipline for men.</p>
+    </footer>
+  </div>
 </body>
-
 </html>
