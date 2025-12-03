@@ -1,0 +1,151 @@
+/*Index.html styles*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Bebas Nue, Inter;
+  background: #f3f3f3;
+  color: #333;
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  min-height: 100vh;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  border-bottom: 4px solid #e0e0e0;
+}
+
+.logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-area img {
+  height: 60px;
+}
+
+.site-name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.site-nav {
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.nav-link {
+  color: #555;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+
+.hero-section {
+  padding: 60px 0;
+}
+
+.hero-text {
+  display: none;
+}
+
+.hero-image-area {
+  width: 100%;
+  height: 400px;
+  background: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+.hero-person-wrapper img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.hero-quote-box {
+  max-width: 350px;
+}
+
+.hero-quote-author {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-quote {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.4;
+}
+.hero-image-bg-wrapper img {
+
+  opacity: 0.95;
+  right: 22%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-image-bg-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 40px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: #3a3a3a;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: #000;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #e0e0e0;
+}
