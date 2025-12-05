@@ -1,4 +1,4 @@
-body {
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,4 +7,74 @@ body {
 img {
     width: 600px;
     columns: 2/3;
+} */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header */
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Quote Box */
+.quote-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 auto 20px;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.quote-box blockquote {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.quote-box cite {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Image styling */
+img {
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 6px;
+}
+
+/* Button */
+#new-quote {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#new-quote:hover {
+    background-color: #555;
 }
