@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
 
-*,*::before,*::after {
+:root {
+  --primary:  #090B0B;
+  --secondary:#999999;
+  --accent1:  #0D1759;
+  --accent2:  #CACFD6;
+  --white:    #FFFFFF;
+}
+
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  color: #090B0B;
-  background-color: #FFFFFF;
+  color: var(--primary);
+  background-color: var(--white);
 }
 
 .page-wrapper {
@@ -21,36 +29,69 @@ body {
 }
 
 .site-header {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2.5rem;
+
+  padding: 0.5rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  border-bottom: 1px solid var(--accent2);
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: inline-flex;
+  align-items: center;
 }
 
 .site-logo {
-  height: 180px;
+  height: 80px;
   width: auto;
 }
 
 .site-nav {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .nav-link {
-  position: relative;
-  padding: 4px 8px;
-  border-radius: 6px;
-  transition: all 0.25s ease;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  color: var(--accent2);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  transition: background-color 0.25s ease,
+              color 0.25s ease,
+              transform 0.1s ease;
 }
 
 .nav-link:hover {
-  color: #0D1759;
-  border: 2px solid #0D1759;
-  background-color: rgba(13, 23, 89, 0.08); 
-  padding: 4px 8px;
+  background-color: var(--accent1);
+  color: var(--white);
+  transform: translateY(-1px);
 }
 
+.nav-link.active {
+  background-color: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--accent2);
+}
 
 .hero-section {
   display: flex;
@@ -99,16 +140,16 @@ body {
 .hero-person-image {
   width: 250px;
   height: 250px;
-  border-radius: 50%; 
+  border-radius: 50%;
   object-fit: cover;
-  border: 5px solid white;
+  border: 5px solid var(--white);
   box-shadow: 0px 8px 20px rgba(0,0,0,0.45);
 }
 
 .hero-quote-box {
   order: 2;
   max-width: 520px;
-  color: white;
+  color: var(--white);
 }
 
 .hero-quote {
@@ -132,8 +173,8 @@ body {
   text-align: center;
   text-decoration: none;
   border-radius: 6px;
-  background-color: #0D1759;
-  color: white;
+  background-color: var(--accent1);
+  color: var(--white);
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
@@ -142,14 +183,14 @@ body {
 }
 
 .btn:hover {
-  background-color: #090B0B;
+  background-color: var(--primary);
 }
 
 .site-footer {
   text-align: center;
   margin-top: 3rem;
   padding-top: 1rem;
-  border-top: 1px solid #CACFD6;
-  color: #999999;
+  border-top: 1px solid var(--accent2);
+  color: var(--secondary);
   font-size: 15px;
 }
